@@ -1,15 +1,26 @@
-# .platform.app.yaml
-
-name: static-html-app
+name: my-php-app
 type: "php:8.0"
 
+# Define services for your application
+services:
+    app:
+        type: php:8.0
+
+    varnish:
+        type: varnish:6.0
+
+# Define the web environment
 web:
     locations:
         "/":
-            # The public directory of the app, relative to its root.
             root: "public"
-            # The front-controller script to send non-static requests to.
             passthru: "/index.html"
-            # The number of seconds whitelisted (static) content should be cache
             expires: 600
 
+# Specify the routes for your application
+# You can define different routes to route requests to different services if needed
+routes:
+    # Default route for the web environment
+    https://{default}/:
+        type: upstream
+        upstream: "app:http"
