@@ -3,12 +3,10 @@ type: "php:8.0"
 
 # Define services for your application
 
-
 # Define the web environment
 web:
     document_root: "public"
-    passthru:
-        - "index.html"
+    passthru: "index.html"  # Change from a list to a string
     expires: 600
 
 # Specify the web route
