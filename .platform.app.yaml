@@ -34,4 +34,10 @@ web:
   locations: 
     '/': 
       root: "public"
-      passthru: "index.html"
+      passthru: "/index.html"
+      
+web:
+  locations: 
+    '/contact-us': 
+      root: "public/contact-us"
+      passthru: "/index.html"      
