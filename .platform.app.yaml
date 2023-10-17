@@ -8,7 +8,7 @@ type: "php:8.0"
 web:
     document_root: "public"
     passthru:
-        - "/index.html"
+        - "index.html"
     expires: 600
 
 # Specify the web route
