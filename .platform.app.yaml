@@ -6,5 +6,10 @@ type: "php:8.0"
 web:
     locations:
         "/":
+            # The public directory of the app, relative to its root.
             root: "public"
-            passthru:"index.html"
+            # The front-controller script to send non-static requests to.
+            passthru: "/index.html"
+            # The number of seconds whitelisted (static) content should be cache
+            expires: 600
+
