@@ -6,4 +6,5 @@ type: "php:8.0"
 web:
     locations:
         "/":
-            root: "."
+            root: "public"
+            passthru:"index.html"
