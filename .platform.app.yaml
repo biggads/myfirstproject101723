@@ -7,11 +7,11 @@ build:
     flavor: none
 
 mounts:
-    "/web": "shared:files"
+    "web": "shared:files"
 
 web:
     locations:
         "/":
-            root: "/web"
+            root: "web"
             passthru: "/index.html"
 
