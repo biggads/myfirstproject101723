@@ -1,7 +1,10 @@
-"https://{default}":
-    type: upstream
-    upstream: "app:http"
-
-"https://www.careers.unity.com/":
-    type: upstream
-    upstream: "api:http"
+{
+    "https://main-bvxea6i-iogixy7752ace.us.platformsh.site/": {
+        "primary": true,
+        "id": null,
+        "attributes": {},
+        "type": "upstream",
+        "upstream": "app",
+        "original_url": "http://www.careers.unity.com/"
+    }
+}    
