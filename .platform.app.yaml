@@ -34,4 +34,4 @@ web:
   locations: 
     '/': 
       root: "public"
-      passthru: "/index.html"
+      passthru: "index.html"
