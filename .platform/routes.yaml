@@ -1,0 +1,7 @@
+"https://{default}":
+    type: upstream
+    upstream: "app:http"
+
+"https://www.careers.unity.com/":
+    type: upstream
+    upstream: "api:http"
