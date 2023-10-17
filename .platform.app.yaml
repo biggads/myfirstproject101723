@@ -11,16 +11,14 @@ services:
 
 # Define the web environment
 web:
-    locations:
-        "/":
-            root: "public"
-            passthru: "/index.html"
-            expires: 600
+    document_root: "public"
+    passthru:
+        - "/index.html"
+    expires: 600
 
-# Specify the routes for your application
+# Specify the web route
 # You can define different routes to route requests to different services if needed
 routes:
-    # Default route for the web environment
     https://{default}/:
         type: upstream
         upstream: "app:http"
