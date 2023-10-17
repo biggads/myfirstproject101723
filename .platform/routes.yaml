@@ -3,6 +3,6 @@
     type: upstream
     upstream: "app:http"
 
-"https://main-bvxea6i-iogixy7752ace.us.platformsh.site/":
+"http://main-bvxea6i-iogixy7752ace.us.platformsh.site/":
     type: redirect
     to: "https://main-bvxea6i-iogixy7752ace.us.platformsh.site/"
