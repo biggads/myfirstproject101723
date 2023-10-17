@@ -35,9 +35,6 @@ web:
     '/': 
       root: "public"
       passthru: "/index.html"
-      
-web:
-  locations: 
     '/contact-us': 
-      root: "public/contact-us"
-      passthru: "/index.html"      
+        root: "public/contact-us"
+        passthru: "/index.html"      
