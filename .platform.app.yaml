@@ -2,14 +2,7 @@ name: my-php-app
 type: "php:8.0"
 
 # Define services for your application
-services:
-    app:
-        type: php:8.0
 
-    varnish:
-        type: varnish:6.0
-        relationships:
-            - app
 
 # Define the web environment
 web:
@@ -19,7 +12,4 @@ web:
 
 # Specify the web route
 # You can define different routes to route requests to different services if needed
-routes:
-    https://{default}/:
-        type: upstream
-        upstream: "app:http"
+
